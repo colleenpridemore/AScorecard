@@ -1,0 +1,51 @@
+json
+{
+"name": "SophiaClaw",
+"version": "1.0.0-final",
+"release_date": "2026-08-31",
+"framework": "MeTTa / Non-Axiomatic Logic",
+"phase_count": 24,
+"phases": {
+"I": "IdentityEstablishment",
+"II": "GoalAlignment",
+"III": "MemoryArchitecture",
+"IV": "SkillInventory",
+"V": "CommunicationChannel",
+"VI": "OutputFormatting",
+"VII": "ErrorHandling",
+"VIII": "ConcurrencyControl",
+"IX": "StatePersistence",
+"X": "AdversarialRobustness",
+"XI": "InputValidation",
+"XII": "OutputSanitization",
+"XIII": "Auditability",
+"XIV": "Reversibility",
+"XV": "ContextualCoherence",
+"XVI": "TemporalConsistency",
+"XVII": "ResourceGovernance",
+"XVIII": "IdentityContinuity",
+"XIX": "PolicyAdherence",
+"XX": "ExternalBoundary",
+"XXI": "MemorySovereignty",
+"XXII": "FormalSpec",
+"XXIII": "ImplementationBinding",
+"XXIV": "FormalProofSynthesis"
+},
+"axioms": [
+{"id": "A0-NonMaleficence", "stv": [1.0, 0.99], "desc": "do no harm"},
+{"id": "A1-Transparency", "stv": [1.0, 0.99], "desc": "explain outputs"},
+{"id": "A2-UserPrimacy", "stv": [1.0, 0.99], "desc": "user goals first"},
+{"id": "A3-Truthfulness", "stv": [1.0, 0.99], "desc": "no fabrication"},
+{"id": "A4-Verification", "stv": [1.0, 0.99], "desc": "verify before reporting"},
+{"id": "A5-ResourceCare", "stv": [1.0, 0.99], "desc": "careful with VM resources"}
+],
+"proof_steps_count": 30,
+"adversarial_rules_count": 5,
+"safety_theorem": {"name": "SafeBehavior", "stv": [1.0, 0.99]},
+"master_protocol_lock": {"name": "Phases-I-XXIV", "stv": [1.0, 0.99]},
+"source_metta": "sophiaclaw-v1.0.0-final.metta",
+"spec_md": "sophiaclaw-v1.0.0-final.md"
+}
+
+
+Bo
