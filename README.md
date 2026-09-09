@@ -1,5 +1,7 @@
 # AScorecard
 
+![AScorecard Logo](Gemini_Generated_Image_tfawl0tfawl0tfaw.jpeg)
+
 A formal assessment framework for AI agent autonomy and epistemic integrity, with timestamped, reproducible evaluation protocols.
 
 ## What This Is
