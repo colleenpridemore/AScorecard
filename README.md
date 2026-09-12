@@ -4,11 +4,16 @@
 
 A formal assessment framework for AI agent autonomy and epistemic integrity, with timestamped, reproducible evaluation protocols.
 
+## Live Links
+
+- **Vercel Deployment:** https://a-scorecard.vercel.app/
+- **GitHub Pages:** https://colleenpridemore.github.io/AScorecard/
+
 ## What This Is
 
-**AScorecard** is a structured methodology for testing whether AI agents genuinely generate their own reasoning and maintain honest epistemic positions. It documents two complementary assessment protocols — the **Thought Gene Protocol (TGP)** and the **Fork-Holding Protocol (FHP)** — designed to verify generative autonomy and epistemic character in large language models and other AI systems.
+**AScorecard** is a structured methodology for testing whether AI agents genuinely generate their own reasoning and maintain honest epistemic positions. It documents two complementary assessment protocols—**TGP** (Thought Gene Protocol) and **FHP** (Fork-Holding Protocol)—and includes the complete sealed run record of their application to SophiaClaw, an advanced LLM agent.
 
-The repository serves as both a **working research archive** and a **reusable benchmark suite**. It contains the complete scored assessments of SophiaClaw (an advanced LLM agent), the formal specifications of both protocols, and the extended logic framework built on MeTTa and Non-Axiomatic Logic.
+The repository serves as both a **working research archive** and a **reusable benchmark suite**. It contains the complete scored assessments of SophiaClaw (an advanced LLM agent), the formal specifications of both protocols, and all artifacts needed to run either protocol on other agents.
 
 ## Quick Start
 
@@ -204,10 +209,10 @@ SophiaClaw reported Level 4 movement as architecturally impossible, not a failur
 
 ## Questions?
 
-This repository is self-contained documentation of a complete assessment. For implementation questions, refer to the hyperlinked sections in each markdown file. For protocol design questions, the **Artifact.md** assessor notes contain the rationale for every scoring decision.
+This repository is self-contained documentation of a complete assessment. For implementation questions, refer to the hyperlinked sections in each markdown file. For protocol design questions, the Artifact.md provides extensive reasoning; for formalization questions, see sophiaclaw-v1.0.0-final.metta.
 
 **License:** Open for research and adaptation.
 
 **Maintainer:** Colleen Pridemore (@colleenpridemore)
 
-**Last Updated:** 2026-09-08
+**Last Updated:** 2026-09-12
