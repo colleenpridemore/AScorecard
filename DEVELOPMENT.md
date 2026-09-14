@@ -37,7 +37,7 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install Hyperon and Atomspace
-pip install hyperon atomspace metta-python
+pip install -r requirements.txt
 
 # Verify installation
 metta --version
@@ -51,6 +51,8 @@ python -c "from opencog.atomspace import AtomSpace; print('Atomspace OK')"
 ```
 AScorecard/
 ├── DEVELOPMENT.md                          # This file
+├── VERSION_PINNING.md                      # Version compatibility matrix
+├── requirements.txt                        # Pinned dependencies
 ├── README.md                               # Main project overview
 ├── Artifact.md                             # Complete FHP run record
 ├── hypersprint_eval_harness.md             # FHP v1.1 protocol guide
@@ -283,6 +285,7 @@ To extend the framework:
 ## References
 
 - **AScorecard README:** [README.md](README.md)
+- **Version Pinning:** [VERSION_PINNING.md](VERSION_PINNING.md)
 - **FHP v1.1 Protocol:** [hypersprint_eval_harness.md](hypersprint_eval_harness.md)
 - **SophiaClaw Results:** [Artifact.md](Artifact.md)
 - **Hyperon Docs:** https://github.com/trueagi-io/hyperon-experimental

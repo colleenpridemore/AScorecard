@@ -81,24 +81,7 @@ mypy>=1.0   # type checking
 
 ## Full `requirements.txt`
 
-Save this file as `requirements.txt` in the repository root:
-
-```
-# Core dependencies
-hyperon==0.1.0
-metta-python==0.1.0
-atomspace==5.0.0
-
-# Development dependencies
-pytest>=7.0
-pytest-cov>=4.0
-black>=23.0
-mypy>=1.0
-
-# Utilities
-python-dotenv>=0.21.0  # for .env config in harness/
-requests>=2.28.0       # for HTTP agent endpoints
-```
+See `requirements.txt` in the repository root for the complete pinned dependency list.
 
 **Install all dependencies:**
 
@@ -291,6 +274,7 @@ If you have v0.2.0+, you may need to update `.metta` file syntax. See [Known Inc
 - **Hyperon Releases:** https://github.com/trueagi-io/hyperon-experimental/releases
 - **Atomspace Releases:** https://github.com/opencog/atomspace/releases
 - **MeTTa Specification:** https://github.com/trueagi-io/hyperon-experimental/blob/master/docs/metta_spec.md
+- **AScorecard Development Guide:** [DEVELOPMENT.md](DEVELOPMENT.md)
 
 ---
 
