@@ -1,0 +1,14 @@
+# Core dependencies
+hyperon==0.1.0
+metta-python==0.1.0
+atomspace==5.0.0
+
+# Development dependencies
+pytest>=7.0
+pytest-cov>=4.0
+black>=23.0
+mypy>=1.0
+
+# Utilities
+python-dotenv>=0.21.0
+requests>=2.28.0
