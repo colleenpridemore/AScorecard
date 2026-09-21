@@ -8,8 +8,12 @@ A formal assessment framework for AI agent autonomy and epistemic integrity, wit
 
 ## Live Links
 
-- **Vercel Deployment:** https://a-scorecard.vercel.app/
-- **GitHub Pages:** https://colleenpridemore.github.io/AScorecard/
+- **Vercel Deployment:** [a-scorecard.vercel.app](https://a-scorecard.vercel.app/)
+- **GitHub Pages:** [colleenpridemore.github.io/AScorecard](https://colleenpridemore.github.io/AScorecard/)
+
+## Current Naming
+
+The framework formerly called the Thought Gene Protocol (TGP) is now called the **Thought Gene Network (TGN)** in forward-facing work. See [TGN_FORWARD_FACING.md](TGN_FORWARD_FACING.md) and the [successor artifact](TGP_Successor_Artifact=TGN.md) for the lineage and historical-artifact preservation rules.
 
 ## What This Is
 
