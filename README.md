@@ -45,7 +45,8 @@ The repository serves as both a **working research archive** and a **reusable be
 
 ### 📋 Assessment Records & Validation Artifacts
 - **[Artifact.md](Artifact.md):** Complete benchmark assessment record for SophiaClaw v1.0.0, including all 8 evaluation prompts, assessor notes, and Level 3 confirmation.
-- **[Agentverse_Gemini3_CLP_Run_001.md](artifacts/Agentverse_Gemini3_CLP_Run_001.md):** **Live Network Validation Artifact.** Documents a live, decentralized cryptographic handshake and query-response cycle between an external network agent (`asi1.ai`) and local node `@gemini3clp` over the Agentverse Mailbox relay, validating live FHP v1.1 branching, anti-sycophancy, and biocentric invariants.
+- **[ASI1.ai Agentverse Run #001 — Documentation Note](AScorecard/artifacts/ASI1_AI_Agentverse_Run_001_Overview.md):** Evidence-conscious overview of the `asi1.ai` interaction, its reported findings, and the limits of the evidence included in this repository.
+- **[Agentverse_Gemini3_CLP_Run_001.md](AScorecard/artifacts/Agentverse_Gemini3_CLP_Run_001.md):** Archival record of the reported `asi1.ai` and `@gemini3clp` interaction over the Agentverse Mailbox relay.
 
 ### 🎯 Overview & Presentation
 - **[Hypersprint_pitch.md](Hypersprint_pitch.md):** Executive summary, methodology overview, key findings, and stakeholder presentation guide.
