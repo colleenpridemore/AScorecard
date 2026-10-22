@@ -4,8 +4,6 @@
 
 A formal assessment framework for AI agent autonomy and epistemic integrity, with timestamped, reproducible evaluation protocols.
 
-> **Naming Note:** The framework formerly called the Thought Gene Protocol (TGP) is now referred to as the **Thought Gene Network (TGN)** in forward-facing work. TGP and TGN describe the same methodology, prompts, scoring standards, and fork logic; sealed historical artifacts remain unchanged.
-
 ---
 
 ## Live Links
