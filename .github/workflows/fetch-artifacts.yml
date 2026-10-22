@@ -1,0 +1,59 @@
+name: Fetch ASI1 Artifacts
+
+on:
+  workflow_dispatch:
+    inputs:
+      artifact_url:
+        description: ASI:One artifact URL
+        required: true
+        type: string
+        default: https://asi1.ai/artifact/abcaa225-1a09-4ee2-ad8c-3c1710a1989c
+      filename:
+        description: "Filename: ASI1_<descriptive_name>_<YYYY-MM-DD>.html"
+        required: true
+        type: string
+        default: ASI1_AI_MetaAI_Muse_Spark_1.1_FHP_TGN_2026-10-20.html
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate filename and download ASI:One artifact page
+        env:
+          ARTIFACT_URL: ${{ inputs.artifact_url }}
+          ARTIFACT_FILENAME: ${{ inputs.filename }}
+        run: |
+          if [[ ! "$ARTIFACT_FILENAME" =~ ^ASI1_[A-Za-z0-9][A-Za-z0-9._-]*_([0-9]{4}-[0-9]{2}-[0-9]{2})\.html$ ]]; then
+            echo "Filename must follow ASI1_<descriptive_name>_<YYYY-MM-DD>.html using letters, numbers, dots, underscores, or hyphens." >&2
+            exit 1
+          fi
+
+          artifact_date="${BASH_REMATCH[1]}"
+          if [[ "$(date -d "$artifact_date" +%F 2>/dev/null || true)" != "$artifact_date" ]]; then
+            echo "Filename must end with a valid calendar date in YYYY-MM-DD format." >&2
+            exit 1
+          fi
+
+          mkdir -p fetched-artifacts
+          curl \
+            --fail \
+            --location \
+            --silent \
+            --show-error \
+            --retry 3 \
+            --retry-delay 2 \
+            --retry-all-errors \
+            --output "fetched-artifacts/$ARTIFACT_FILENAME" \
+            "$ARTIFACT_URL"
+
+      - name: Upload downloaded page
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.filename }}
+          path: fetched-artifacts/${{ inputs.filename }}
+          if-no-files-found: error
