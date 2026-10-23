@@ -7,12 +7,12 @@ on:
         description: ASI:One artifact URL
         required: true
         type: string
-        default: https://asi1.ai/artifact/abcaa225-1a09-4ee2-ad8c-3c1710a1989c
+        default: https://asi1.ai/artifact/6b0080c2-bbf9-49f5-b2de-6fa1293fd103
       filename:
         description: "Filename: ASI1_<descriptive_name>_<YYYY-MM-DD>.html"
         required: true
         type: string
-        default: ASI1_AI_MetaAI_Muse_Spark_1.1_FHP_TGN_2026-10-20.html
+        default: ASI1_AI_Three-Way_Comparison_OmegaClaw_Gemini_Meta_AI2026-10-20.html
 
 permissions:
   contents: read
