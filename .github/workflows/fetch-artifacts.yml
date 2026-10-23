@@ -12,7 +12,7 @@ on:
         description: "Filename: ASI1_<descriptive_name>_<YYYY-MM-DD>.html"
         required: true
         type: string
-        default: ASI1_AI_Three-Way_Comparison_OmegaClaw_Gemini_Meta_AI2026-10-20.html
+        default: ASI1_Three-Way_Comparison_OmegaClaw_Gemini_Meta_AI_2026-10-20.html
 
 permissions:
   contents: read
